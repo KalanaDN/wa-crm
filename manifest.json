@@ -1,0 +1,33 @@
+{
+   "action": {
+      "default_icon": "icon-34.png"
+   },
+   "background": {
+      "service_worker": "background.bundle.js"
+   },
+   "chrome_url_overrides": {
+   },
+   "content_scripts": [ {
+      "css": [ "content.styles.css" ],
+      "js": [ "contentScript.bundle.js" ],
+      "matches": [ "*://*.whatsapp.com/*" ]
+   } ],
+   "description": "Use WA Sender Plus Whatsapp Extension Your most powerful assistant for WhatsApp marketing & WhatsApp sales",
+   "host_permissions": [ "*://*.whatsapp.com/*" ],
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnMXbZ5fI39b29uzSUZlagESM3oloAnms9+1QIZBpQyoQCw1sbc1CYQZRJi4tV4kyM579Ln6F4MJePkA236QyU7QqFceoQ28KGxMrK7NiLwrqsiWWKzGgqRu3Xs0rAS2DseT3SSPhMdIcJfjmZHOiIGu6EabGvh++TS+ZC4jvfhJPct/T6KP07ELI0tUo3bN4B07CyRgNHirxxUWygUX5Qn9K2RGOBngRd2TBXdXk30ETAt0xpZ7cQ3rijhpeevAPjvg36AW/hCu7WRaohqPeOBxe+hEtRe+DTjB+GruSR2u9R+gb+rZlxUFhZujugYTbIkFXq43diX8dEkwLED82QQIDAQAB",
+   "manifest_version": 3,
+   "name": "WA Sender Plus Whatsapp Extension for Free Bulk Whatsapp Sender",
+   "permissions": [ "tabs", "storage", "unlimitedStorage", "notifications" ],
+   "short_name": "WA Sender Plus",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.0",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*.whatsapp.com/*" ],
+      "resources": [ "icon-128.png", "icon-48.png", "icon-16.png", "icon-34.png", "images/*", "content.styles.css", "inject.styles.css", "injectScript.bundle.js", "contact_upload.csv", "contact_upload.xlsx", "imported_js.js", "imported_css.css" ]
+   } ]
+}
